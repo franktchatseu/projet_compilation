@@ -5,21 +5,21 @@ import java.util.Stack;
 
 public class Automate {
 	
-	private int etat_initial;
+	private Etat_transition etat_initial;
 	private List<Etat_transition> liste_etat;
 	
-	public Automate(int etat_initial, List<Etat_transition> liste_etat) {
+	public Automate(Etat_transition etat_initial, List<Etat_transition> liste_etat) {
 		super();
 		this.etat_initial = etat_initial;
 		this.liste_etat = liste_etat;
 	}
 
-	public int getEtat_initial() {
+	public Etat_transition getEtat_initial() {
 		return etat_initial;
 	}
 	
 	
-	public void setEtat_initial(int etat_initial) {
+	public void setEtat_initial(Etat_transition etat_initial) {
 		this.etat_initial = etat_initial;
 	}
 
@@ -34,7 +34,7 @@ public class Automate {
 		// TODO Auto-generated constructor stub
 		
 	}
-	Stack p; 
+	
 	
 	
 	

@@ -3,6 +3,7 @@ package com_interface;
 import java.util.List;
 
 import com_nos_classes.Automate;
+import com_nos_classes.Etat_transition;
 import com_nos_classes.Stockage;
 import com_nos_classes.Transition;
 
@@ -29,5 +30,8 @@ public interface Nos_fonctions {
 	public Automate ajout_transtion_aut(Automate a,Transition t);
 	//differentes fonctions pour la suite
 	public void afficher_automate(Automate a);
+	public Etat_transition etat_final_ele(Automate a);
 	
+	//clonage d'un automate
+		
 }

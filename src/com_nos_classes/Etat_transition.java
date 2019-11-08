@@ -4,14 +4,15 @@ import java.util.List;
 
 public class Etat_transition {
 		
-	private int etiquette_etat;
+	public  int etiquette_etat;
 	private List<Transition> liste_de_transition;
 	private boolean isfinal;
-	public Etat_transition(int etiquette_etat, List<Transition> liste_de_transition, boolean isfinal) {
+	public Etat_transition(List<Transition> liste_de_transition, boolean isfinal) {
 		super();
-		this.etiquette_etat = etiquette_etat;
+		this.etiquette_etat = et;
 		this.liste_de_transition = liste_de_transition;
 		this.isfinal = isfinal;
+		et=et+1;
 	}
 	public int getEtiquette_etat() {
 		return etiquette_etat;
@@ -33,5 +34,5 @@ public class Etat_transition {
 	}
 	
 	
-	
+	public static int et=0;
 }
